@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla-Regular;
+    color: var(--gray);
+
+}
+
+@font-face {
+    font-family: Karla-Bold;
+    src: url(..//fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+    font-family: Karla-Regular;
+    src: url(..//fonts/Karla-Regular.ttf);
+}
+
+:root {
+    --Green-200: hsl(148, 38%, 91%);
+    --Green-600: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --gray: rgb(67, 67, 67);
+    --White: hsl(0, 0%, 100%);
+    --Grey-500: hsl(186, 15%, 59%);
+    --Grey-900: hsl(187, 24%, 22%);
+}
+
+body {
+    background-color: var(--Green-200);
+    padding: 20%;
+    padding-top: 5%;
+}
+
+.container {
+    background-color: var(--White);
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    line-height: 50px;
+
+}
+
+h2 {
+    padding: 8px;
+    
+    color: black;
+    font-family: Karla-Bold;
+}
+
+label {
+    font-size: 16px;
+}
+
+label::after {
+    content: '*';
+    font-size: 20px;
+    color: var(--Green-600);
+}
+
+input {
+    border: 2px solid var(--Grey-500);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.name:hover {
+    border: 2px solid var(--Green-600);
+}
+
+.emails {
+    display: block;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.idnt {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.emails {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.emails input {
+    padding: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.radio {
+    border: 2px solid var(--Grey-500);
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3px;
+    padding-left: 20px;
+}
+
+.radio:hover {
+    background-color: var(--Grey-200);
+    border: 2px solid var(--Green-600);
+}
+
+
+.itemsradio:checked{
+  background-color: var(--Green-600);
+    color: var(--Green-600);
+}
+
+textarea {
+    border: 2px solid var(--Grey-500);
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--Green-600);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--White);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: var(--Grey-900);
+}
