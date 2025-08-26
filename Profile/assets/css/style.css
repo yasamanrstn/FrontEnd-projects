@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter-SemiBold";
+}
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(../fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+:root{
+    --Green: #c5f82a;
+   --White: hsl(0, 0%, 100%);
+   --Grey-700 : #333333;
+   --Grey-800 : #1f1f1f;
+   --Grey-900 : #141414; 
+}
+img{
+    border-radius: 100px;
+  
+
+}
+body{
+    background-color: #141414;
+    padding:8%;
+}
+.container{
+    background-color: #1f1f1f;
+    padding: 3%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+h2{
+    color: var(--White);
+    font-size: 20px;
+    margin-top: 25px;
+}
+h3{
+    color: var(--Green);
+    font-size: 12px;
+}
+h4{
+    font-size: 12px;
+    color:rgb(229, 228, 228);
+    font-family: "Inter-Regular";
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button{
+    color: white;
+    background-color: #333333;
+    border-radius: 7px;
+    border: 0px;
+    font-size: 12px;
+    margin: 15px;
+    padding: 3%;
+    
+}
+button.Instagram{
+    margin-bottom: 0px;
+}
+button:hover{
+    background-color: #c5f82a;
+    color: var(--Grey-800);
+}
