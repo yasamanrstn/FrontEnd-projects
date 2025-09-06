@@ -1,0 +1,80 @@
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url(../fonts/Barlow-SemiBold.ttf);
+}
+@font-face {
+  font-family:"Barlow-Regular" ;
+  src: url(../fonts/Barlow-Regular.ttf);
+}
+body {
+  font-family: "Barlow-SemiBold";
+  background-color: var(--Grey-100);
+  font-size: 13px;
+  padding: 10%;
+}
+h5{
+  font-size: 13px;
+}
+h6{
+  font-size: 10px;
+  font-weight: 400;
+}
+h4{
+  font-size: 15px;
+}
+p{
+  font-family:"Barlow-Regular" ;
+  font-weight: 500;
+  font-size: 13px;
+}
+.Daniel {
+  background-color: var(--Purple-500);
+  color: var(--Grey-100);
+  font-size: 13px;
+  box-shadow: 29px 65px 20px 16px hsl(0, 0%, 84%);
+}
+
+.avatar {
+  width: 50px;
+  height: 45px;
+}
+.pattern {
+  width: 50px;
+  height: 65px;
+}
+.Jonathan {
+  background-color: var(--Grey-500);
+  color: var(--White);
+  font-size: 13px;
+  box-shadow: 29px 65px 20px 16px hsl(0, 0%, 84%);
+}
+.Jeanette {
+  background-color: var(--White);
+  color: var(--Grey-500);
+  font-size: 13px;
+  box-shadow: 29px 65px 20px 16px hsl(0, 0%, 84%);
+}
+.Patrick {
+  background-color: var(--Dark-blue);
+  color: var(--Grey-100);
+  font-size: 13px;
+  box-shadow: 29px 65px 20px 16px hsl(0, 0%, 84%);
+}
+.Kira {
+  background-color: var(--White);
+  color: var(--Grey-500);
+  font-size: 13px;
+  box-shadow: 29px 65px 20px 16px hsl(0, 0%, 84%);
+}
