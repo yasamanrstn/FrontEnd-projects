@@ -1,0 +1,147 @@
+:root {
+  --black-par: #000000;
+  --white: var(--white);
+  --red: #f84646;
+  --GRAY: #ebeceefc;
+}
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url(../font/Manrope-Bold.ttf);
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url(..//font/Manrope-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url(../font/Manrope-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url(../font/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url(../font/Manrope-Medium.ttf);
+}
+body {
+  font-family: "Manrope-Regular";
+}
+.header {
+  background-image: url(../image/Rectangle\ 1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+.header ul {
+  font-size: 14px;
+  font-family: "Manrope-Bold";
+  color: var(--black-par);
+}
+h1 {
+  font-family: "Manrope-ExtraBold";
+  font-size: 64px;
+}
+h2 {
+  font-family: "Manrope-Bold";
+}
+h5 {
+  font-family: "Manrope-ExtraBold";
+  font-size: 24px;
+}
+h6 {
+  font-family: "Manrope-Regular";
+  font-size: 18px;
+}
+.part-3 h6 {
+  font-family: "Manrope-Bold";
+  font-size: 18px;
+}
+art-3 h5 {
+  font-size: 18px;
+  font-family: "Manrope-Regular";
+}
+.part-3 h1 {
+  font-family: "Manrope-ExtraBold";
+  font-size: 48px;
+}
+p {
+  font-family: "Manrope-Regular";
+}
+.part-3 .row img {
+  width: 48px;
+  height: 25px;
+}
+.part-3 {
+  background-color: var(--red);
+  color: white;
+  position: relative;
+}
+.part-3::after {
+  content: " ";
+  background-image: url(../image/image\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.17;
+}
+.part-4 {
+  margin-bottom: 20%;
+}
+.part-4 p {
+  font-family: "Manrope-Regular";
+  color: grey;
+}
+.part-5 {
+  background-color: #f4f5f7;
+}
+.part-5 .row img {
+  background-color: var(--white);
+}
+.part-5 .col h2 {
+  font-size: 48px;
+  font-family: "Manrope-ExtraBold";
+}
+.part-5 .col h5 {
+  font-family: "Manrope-Medium";
+  font-size: 18px;
+}
+.part-6 h2 {
+  font-size: 48px;
+  font-family: "Manrope-ExtraBold";
+}
+.part-6 h6 {
+  font-family: "Manrope-Medium";
+  font-size: 18px;
+}
+.part-6 button {
+  font-family: "Manrope-SemiBold";
+  font-size: 24px;
+}
+
+.footer {
+  background-color: var(--red);
+  line-height: 40px;
+  font-size: 16px;
+}
+.footer ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+.footer li:first-child {
+  font-weight: 400;
+  font-family: "Manrope-medium";
+}
+.footer li {
+  font-family: "Manrope-Regular";
+  font-weight: 100;
+  color: var(--white);
+}
+.address img {
+  width: 17px;
+  height: 18px;
+}
