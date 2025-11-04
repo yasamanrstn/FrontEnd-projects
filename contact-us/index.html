@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Form</title>
+    <link rel="icon" type="img/png" href="assets/images/favicon-32x32.png" />
+
+    <link
+      rel="stylesheet"
+      href="assets/libs/bootstrap-5.3.7-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="p-4">
+    <div class="row justify-content-evenly">
+      <div class="container col-12 col-md-6 p-4 pb-1 mt-5 rounded m-0">
+        <div class="massage-sent w-50 rounded p-3 justify-content-center">
+          <div class="col gap-2 d-md-flex flex-md-row">
+            <img
+              src="assets/images/icon-success-check.svg"
+              alt="success-check"
+            />
+            <h5 class="mt-2">Massage Sent!</h5>
+          </div>
+          <h6>Thanks for completing the form.We'll be in touch soon!</h6>
+        </div>
+        <h4 class="mb-2 text-start">Contact Us</h4>
+
+        <form method="get" action="#">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="firstname" class="form-label" minlen="3"
+                >First Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder=""
+                isrequired
+              />
+              <span class="error">This field is required.</span>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastname" class="form-label" minlen="3"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control rounded"
+                id="lastName"
+                placeholder=""
+                isrequired
+              />
+              <span class="error">This field is required.</span>
+            </div>
+          </div>
+
+          <div class="form-group my-3">
+            <label for="email" class="form-label">Email Address </label>
+            <input
+              type="email"
+              class="form-control rounded"
+              id="email"
+              placeholder=""
+            />
+            <span class="error" minlen="10">This field is required.</span>
+          </div>
+
+          <div class="form-group-radio mb-2">
+            <label class="form-label d-block">Query Type </label>
+            <div class="row query-type justify-content-between">
+              <div class="col-md-6">
+                <label class="query-option rounded p-2 w-100 mb-3">
+                  <input
+                    type="radio"
+                    name="queryType"
+                    value="General Enquiry"
+                  />
+                  General Enquiry
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label class="query-option rounded p-2 w-100 mb-3">
+                  <input
+                    type="radio"
+                    name="queryType"
+                    value="Support Request"
+                  />
+                  Support Request
+                </label>
+              </div>
+            </div>
+            <span class="error"> please select a queryType ! </span>
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="message" class="form-label">Message </label>
+            <textarea
+              class="form-control rounded"
+              id="message"
+              rows="4"
+            ></textarea>
+            <span class="error">This field is required.</span>
+          </div>
+
+          <div id="aria-inputs"></div>
+
+          <div class="check my-3">
+            <input class="check-input rounded-1" type="checkbox" id="consent" />
+            <label class="form-check-label" for="consent">
+              I consent to being contacted by the team
+            </label>
+            <span class="error"
+              >To submit this form, please consent to being contacted.</span
+            >
+          </div>
+
+          <button type="submit" class="btn-submit w-100 rounded p-2">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="container-add-section col-8 col-md-4 p-4 mt-5 rounded">
+        <form id="input-generator">
+          <h2>Add a new section</h2>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Field name</label
+            >
+            <input type="text" class="form-control" id="input-name" />
+          </div>
+
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="Check">Check me out</label>
+          </div>
+          <button type="submit" class="btn-submit p-1 px-3 rounded float-end">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+  </body>
+</html>

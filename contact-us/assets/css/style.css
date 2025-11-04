@@ -1,0 +1,145 @@
+:root {
+  --Green-200: hsl(148, 38%, 91%);
+  --Green-600: hsl(169, 82%, 27%);
+  --Red: rgb(217, 58, 58);
+  --gray: rgb(67, 67, 67);
+  --White: hsl(0, 0%, 100%);
+  --Grey-500: hsl(186, 15%, 59%);
+  --Grey-900: hsl(187, 24%, 22%);
+}
+@font-face {
+  font-family: "Karla-Bold";
+  src: url(../fonts/Karla-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Karla-Regular";
+  src: url(../fonts/Karla-Regular.ttf);
+}
+
+body {
+  background-color: var(--Green-200);
+}
+
+.container {
+  background-color: var(--White);
+  font-family: "Karla-Regular";
+  position: relative;
+}
+.container-add-section{
+  background-color: var(--White);
+  font-family: "Karla-Regular";
+  height: fit-content;
+}
+h4 {
+  color: var(--gray);
+  font-family: "Karla-Bold";
+}
+.form-label {
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+}
+label::after {
+  content: "*";
+  color: var(--Green-600);
+  font-size: 20px;
+  color: var(--Green-600);
+}
+.query-option {
+  content: "";
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  color: var(--gray);
+  font-size: 18px;
+  font-family: "Karla-Regular";
+}
+
+.form-check-input {
+  accent-color: var(--Green-600);
+}
+.check-input {
+  accent-color: var(--Green-600);
+  width: 16px;
+}
+input {
+  border: 1px solid var(--Grey-500);
+}
+
+input:focus {
+  border-color: var(--Green-600) !important;
+  box-shadow: none !important;
+}
+input[type="radio"] {
+  accent-color: var(--Green-600);
+}
+
+.radio {
+  border: 2px solid var(--Grey-500);
+  width: 100%;
+}
+.query-option:hover {
+  background-color: #f7f7f7;
+}
+.radio:hover {
+  background-color: var(--Grey-200);
+  border: 2px solid var(--Green-600);
+}
+
+textarea {
+  border: 2px solid var(--Grey-500);
+  border-radius: 5px;
+  resize: none;
+}
+textarea:focus {
+  border-color: var(--Green-600) !important;
+  box-shadow: none !important;
+}
+button:hover {
+  background-color: var(--Grey-900);
+}
+.btn-submit {
+  background-color: var(--Green-600);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
+.error {
+  display: none;
+  color: var(--Red);
+  opacity: 1;
+  font-family: "Karla-Regular";
+  font-size: 15px;
+}
+.active {
+  opacity: 0;
+  display: block;
+}
+.massage-sent {
+  background-color: var(--Grey-900);
+  color: var(--Green-600);
+  position: absolute;
+  top: -400px;
+  left: 70px;
+}
+.massage-sent img {
+  width: 20px;
+}
+.massage-sent h5 {
+  font-size: 16px;
+  color: white;
+}
+.massage-sent h6 {
+  font-size: 12px;
+  color: white;
+}
+.container-add-section{
+  background-color: var(--White);
+  font-family: "Karla-Regular";
+  height: fit-content;
+}
+.container-add-section h2 {
+   font-family: "Karla-bold";
+   font-size: 30px;
+   color: var(--gray);
+}
