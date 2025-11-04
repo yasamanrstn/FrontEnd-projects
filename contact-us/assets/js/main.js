@@ -76,7 +76,6 @@ $("#input-generator").on("submit", (e) => {
   e.preventDefault();
 
   let newname = document.getElementById("input-name").value.trim();
-  if (!newname) return alert("Please enter a field name!");
 
   let target = document.getElementById("aria-inputs");
 
@@ -110,6 +109,7 @@ $("#input-generator").on("submit", (e) => {
   target.append(div);
   document.getElementById("input-name").value = "";
 });
+
 
 
 
